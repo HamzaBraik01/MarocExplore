@@ -1,66 +1,165 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🌍 MarocExplore API
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+![MarocExplore Banner](https://via.placeholder.com/1200x300.png?text=MarocExplore+API)  
+*Explore Morocco like never before – Create, Share, and Discover Personalized Travel Itineraries!*
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 📜 Project Overview
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+**MarocExplore** is a tourism promotion platform designed to showcase the diverse destinations of Morocco. This API, built with **Laravel** and **PostgreSQL**, powers a system where users can create, manage, and share custom travel itineraries, complete with destinations, activities, and more. Designed with security, scalability, and user experience in mind, this project aims to inspire travelers to explore Morocco’s beaches, mountains, rivers, and monuments.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## ✨ Features
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### 🔒 Authentication & User Management
+- **Sign Up / Login**: Create and authenticate user accounts securely.
+- **Bonus**: JWT-based authentication for enhanced security.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### 🗺️ Itinerary Management
+- **Create**: Build itineraries with a title, category (e.g., beach, mountain), duration, image, and at least 2 destinations.
+- **Edit**: Modify itineraries (only by the creator).
+- **Wishlist**: Add itineraries to a personal "To Visit" list.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### 📍 Destination Management
+- Add multiple destinations to an itinerary.
+- Store details like name, accommodation, and a list of places to visit, activities, or dishes to try.
 
-## Laravel Sponsors
+### 🔍 Search & Browse
+- View all available itineraries.
+- Filter by category and duration.
+- Search itineraries by keywords in the title.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### 🛠️ Testing & Documentation
+- Comprehensive unit tests for all API endpoints.
+- Postman collection for manual testing.
+- Detailed API documentation using Swagger.
 
-### Premium Partners
+### 📊 Query Builder
+- Fetch itineraries with their destinations.
+- Filter by category and duration.
+- Add to "To Visit" list.
+- Search by title keyword.
+- Retrieve most popular itineraries (by favorites).
+- Stats: Total itineraries per category.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+### 🌟 Bonus Features
+- JWT authentication.
+- Rating and commenting system.
+- Recommendation engine based on user preferences.
 
-## Contributing
+---
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## 🛠️ Tech Stack
 
-## Code of Conduct
+- **Backend**: Laravel (PHP Framework)
+- **Database**: PostgreSQL
+- **Authentication**: JWT (JSON Web Tokens)
+- **Testing**: PHPUnit (Laravel’s built-in testing suite)
+- **Documentation**: Swagger / Postman
+- **Deployment**: [Heroku / AWS / Laravel Forge] *(Optional)*
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+---
 
-## Security Vulnerabilities
+## 🚀 Getting Started
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### Prerequisites
+- [PHP](https://www.php.net/) (v8.1+)
+- [Composer](https://getcomposer.org/) (Dependency Manager for PHP)
+- [PostgreSQL](https://www.postgresql.org/) (v13+)
+- [Postman](https://www.postman.com/) for API testing
 
-## License
+### Installation
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/yourusername/maroc-explore-api.git
+   cd maroc-explore-api
+Install Dependencies
+bash
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Collapse
+
+Wrap
+
+Copy
+composer install
+Set Up Environment Variables Copy the .env.example file to .env and configure it:
+bash
+
+Collapse
+
+Wrap
+
+Copy
+cp .env.example .env
+Update the .env file with your PostgreSQL credentials:
+text
+
+Collapse
+
+Wrap
+
+Copy
+APP_NAME=MarocExplore
+APP_ENV=local
+APP_KEY=  # Generate with `php artisan key:generate`
+APP_DEBUG=true
+APP_URL=http://localhost
+
+DB_CONNECTION=pgsql
+DB_HOST=127.0.0.1
+DB_PORT=5432
+DB_DATABASE=maroc_explore
+DB_USERNAME=your_postgres_username
+DB_PASSWORD=your_postgres_password
+Run Database Migrations
+bash
+
+Collapse
+
+Wrap
+
+Copy
+php artisan migrate
+Generate Application Key
+bash
+
+Collapse
+
+Wrap
+
+Copy
+php artisan key:generate
+Run the Application
+bash
+
+Collapse
+
+Wrap
+
+Copy
+php artisan serve
+The API will be available at http://localhost:8000.
+Test the API Import the Postman collection from docs/postman_collection.json and start exploring the endpoints!
+📚 API Endpoints
+Method	Endpoint	Description
+POST	/api/auth/register	Register a new user
+POST	/api/auth/login	Login and get JWT token
+POST	/api/itineraries	Create a new itinerary
+GET	/api/itineraries	Fetch all itineraries
+GET	/api/itineraries/{id}	Fetch a specific itinerary
+PUT	/api/itineraries/{id}	Update an itinerary (owner)
+POST	/api/wishlist	Add itinerary to wishlist
+GET	/api/search	Search itineraries by filters
+Full documentation available in Swagger (link to be added).
+
+🧪 Running Tests
+bash
+
+Collapse
+
+Wrap
+
+Copy
+php artisan test
