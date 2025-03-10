@@ -1,6 +1,6 @@
 # 🌍 MarocExplore API
 
-![MarocExplore Banner](https://via.placeholder.com/1200x300.png?text=MarocExplore%20API)  
+![MarocExplore Banner](https://cdn.vectorstock.com/i/preview-1x/62/24/morocco-horizontal-poster-vector-41196224.jpg)  
 *Explore Morocco like never before – Create, Share, and Discover Personalized Travel Itineraries!*
 
 ---
