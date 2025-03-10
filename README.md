@@ -1,6 +1,6 @@
 # 🌍 MarocExplore API
 
-![MarocExplore Banner](https://via.placeholder.com/1200x300.png?text=MarocExplore+API)  
+![MarocExplore Banner](https://via.placeholder.com/1200x300.png?text=MarocExplore%20API)  
 *Explore Morocco like never before – Create, Share, and Discover Personalized Travel Itineraries!*
 
 ---
@@ -58,7 +58,6 @@
 - **Authentication**: JWT (JSON Web Tokens)
 - **Testing**: PHPUnit (Laravel’s built-in testing suite)
 - **Documentation**: Swagger / Postman
-- **Deployment**: [Heroku / AWS / Laravel Forge] *(Optional)*
 
 ---
 
@@ -73,34 +72,31 @@
 ### Installation
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/yourusername/maroc-explore-api.git
-   cd maroc-explore-api
-Install Dependencies
-bash
+   git clone https://github.com/HamzaBraik01/MarocExplore.git
+   cd MarocExplor
 
-Collapse
 
-Wrap
+```markdown
 
-Copy
+## Step 2: Install Dependencies
+
+Install all required dependencies with Composer:
+
+```bash
 composer install
-Set Up Environment Variables Copy the .env.example file to .env and configure it:
-bash
+```
 
-Collapse
+## Step 3: Set Up Environment Variables
 
-Wrap
+Copy the `.env.example` file to `.env` and configure it:
 
-Copy
+```bash
 cp .env.example .env
-Update the .env file with your PostgreSQL credentials:
-text
+```
 
-Collapse
+Update the `.env` file with your PostgreSQL credentials:
 
-Wrap
-
-Copy
+```env
 APP_NAME=MarocExplore
 APP_ENV=local
 APP_KEY=  # Generate with `php artisan key:generate`
@@ -113,53 +109,60 @@ DB_PORT=5432
 DB_DATABASE=maroc_explore
 DB_USERNAME=your_postgres_username
 DB_PASSWORD=your_postgres_password
-Run Database Migrations
-bash
+```
 
-Collapse
+## Step 4: Run Database Migrations
 
-Wrap
+Run the database migrations to set up your tables:
 
-Copy
+```bash
 php artisan migrate
-Generate Application Key
-bash
+```
 
-Collapse
+## Step 5: Generate Application Key
 
-Wrap
+Generate the application key:
 
-Copy
+```bash
 php artisan key:generate
-Run the Application
-bash
+```
 
-Collapse
+## Step 6: Run the Application
 
-Wrap
+Run the application on the local development server:
 
-Copy
+```bash
 php artisan serve
-The API will be available at http://localhost:8000.
-Test the API Import the Postman collection from docs/postman_collection.json and start exploring the endpoints!
-📚 API Endpoints
-Method	Endpoint	Description
-POST	/api/auth/register	Register a new user
-POST	/api/auth/login	Login and get JWT token
-POST	/api/itineraries	Create a new itinerary
-GET	/api/itineraries	Fetch all itineraries
-GET	/api/itineraries/{id}	Fetch a specific itinerary
-PUT	/api/itineraries/{id}	Update an itinerary (owner)
-POST	/api/wishlist	Add itinerary to wishlist
-GET	/api/search	Search itineraries by filters
-Full documentation available in Swagger (link to be added).
+```
 
-🧪 Running Tests
-bash
+The API will be available at `http://localhost:8000`.
 
-Collapse
+## Step 7: Test the API
 
-Wrap
+Import the Postman collection from `docs/postman_collection.json` and start exploring the endpoints!
 
-Copy
+### 📚 API Endpoints
+
+| Method | Endpoint                     | Description                                 |
+|--------|------------------------------|---------------------------------------------|
+| POST   | /api/auth/register            | Register a new user                        |
+| POST   | /api/auth/login               | Login and get JWT token                    |
+| POST   | /api/itineraries              | Create a new itinerary                      |
+| GET    | /api/itineraries              | Fetch all itineraries                       |
+| GET    | /api/itineraries/{id}         | Fetch a specific itinerary                 |
+| PUT    | /api/itineraries/{id}         | Update an itinerary (owner)                |
+| POST   | /api/wishlist                 | Add itinerary to wishlist                   |
+| GET    | /api/search                   | Search itineraries by filters              |
+
+Full documentation is available in Swagger (link to be added).
+
+## Step 8: Running Tests
+
+Run the following command to execute tests:
+
+```bash
 php artisan test
+```
+```
+
+
