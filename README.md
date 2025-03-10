@@ -76,8 +76,6 @@
    cd MarocExplor
 
 
-```markdown
-
 ## Step 2: Install Dependencies
 
 Install all required dependencies with Composer:
@@ -163,6 +161,6 @@ Run the following command to execute tests:
 ```bash
 php artisan test
 ```
-```
+
 
 
