@@ -15,7 +15,6 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  *     @OA\Property(property="name", type="string", maxLength=255, description="Nom de la destination", example="Place Jemaa el-Fna"),
  *     @OA\Property(property="lodging", type="string", maxLength=255, nullable=true, description="Lieu de logement suggéré", example="Riad Al Mamoun"),
  *     @OA\Property(property="things_to_do", type="string", nullable=true, description="Endroits à visiter, activités, plats", example="Visiter les souks, manger sur la place, charmeurs de serpents")
- *     // On n'inclut généralement pas itinerary_id, created_at, updated_at dans le schéma de réponse API s'ils ne sont pas dans la Resource
  * )
  */
 class Destination extends Model

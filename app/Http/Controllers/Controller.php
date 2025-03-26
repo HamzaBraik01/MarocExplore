@@ -12,16 +12,16 @@ use Illuminate\Routing\Controller as BaseController;
  *      title="MarocExplore API Documentation",
  *      description="Documentation de l'API pour la plateforme MarocExplore permettant de gérer des itinéraires touristiques.",
  *      @OA\Contact(
- *          email="contact@maroc-explore.ma" // Mettez votre email
+ *          email="contact@maroc-explore.ma"
  *      ),
  *      @OA\License(
- *          name="Licence MIT", // Ou autre licence
+ *          name="Licence MIT",
  *          url="https://opensource.org/licenses/MIT"
  *      )
  * )
  *
  * @OA\Server(
- *      url=L5_SWAGGER_CONST_HOST, // Sera remplacé par l'URL dans config ou .env
+ *      url=L5_SWAGGER_CONST_HOST,
  *      description="Serveur API MarocExplore"
  * )
  *

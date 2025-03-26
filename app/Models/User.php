@@ -19,7 +19,6 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
  *     @OA\Property(property="id", type="integer", readOnly=true, description="ID unique de l'utilisateur", example=1),
  *     @OA\Property(property="name", type="string", description="Nom de l'utilisateur", example="John Doe"),
  *     @OA\Property(property="email", type="string", format="email", readOnly=true, description="Adresse email (généralement non modifiable via cette API)", example="john.doe@example.com")
- *     // Ne pas inclure les champs sensibles comme password, remember_token, email_verified_at ici
  * )
  */
 class User extends Authenticatable
